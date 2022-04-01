@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block title %} "Post" {% endblock %}
+
+{% block content %}
+
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfZKtDMm6NXaWpJNRilP5k8nuMmNWZ06XVg&usqp=CAU"></body>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+  body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+  </style>
+  </head>
+  <body class="w3-light-grey">
+  
+  <!-- w3-content defines a container for fixed size centered content, 
+  and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="w3-content" style="max-width:1400px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-100"> 
+    <h1><b>Post</b></h1>
+    <p><span class="w3-tag">Bienvenido</span></p>
+  </header>
+  
+  
+  <!-- Grid -->
+  <div class="w3-row">
+
+
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <h3><b>Descripción del Equipo</b></h3>
+
+
+        <center><img src="https://web-static.wrike.com/blog/content/uploads/2016/03/colaboracion-equipos-creativos-820x480.jpg?av=f001ad828bef4c728bca9778cd54cfdds"></center>
+</body>
+</html>
+<div class="container"> 
+ <div class="row my-5">
+    {% for post in posts %}
+    <div class="col-4"></div>
+      <center><h4> {{post.title}} </h4></center>
+         <center><p> {{post.extract}} </p></center>
+      <p>{{post.content}}</p>
+      <small>{{post.date_pub}}</small>
+ </div>
+
+ {% endfor %}
+</div>
+
+<!-- Blog entry -->
+<div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+     
+      <h3><b>Descripción creativa del equipo:</b></h3>
+
+      <center><img src="https://www.mastercumlaude.com/blog/wp-content/uploads/2020/12/think-tank-749x400.jpg"</center>
+
+    </div>
+
+    <div class="w3-container">
+      
+      <span class="w3-large">Presentación creativa de Gabriel Salas:</span><br>
+
+  <p>A los 13 años, fueron mis comienzos como diseñador gráfico empezaron en un momento crucial donde se me despertó el interés en crear diseños o plasmar las ideas que despertaban en los pensamientos de las personas, fue hay donde empezó mi hobby.
+  Mis estudios de bachillerato los realizo en el I.T.A.T donde me ingrese para sacar mi título como Técnico Medio en Informática.
+  Mis planes para el futuro son realizar cursos y carreras referentes al área de diseño gráfico en redes sociales. </p>
+
+  <span class="w3-large">Presentación creativa de Javier Yance:</span><br>
+
+<p>A los 14 años, se me despertó el interés en estuadiar temas referentes a la informática , mi inspiración surgió en el área de la programación. El mejor modo de predecir el futuro es inventandolo, fue hay donde empezó mi hobby.
+  Mis estudios de bachillerato los realizo en el I.T.A.T donde me ingrese para sacar mi título como Técnico Medio en Informática.
+  Mis planes para el futuro son realizar cursos y carreras referentes al área de programación. El desarrollo web es un campo que me llama mucho la atención, Si atendemos a la definición de desarrollo web, comprendemos que es la actividad basada en crear sitios web. Para ello, se utilizan distintos programas informáticos o software que ayudan a empresas o simplemente particulares afianzar su presencia en la red de redes, Internet.
+
+  Mediante el desarrollo web usted desde su casa puede compartir información con otro usuario de cualquier parte del mundo y aunque el desarrollo de páginas web ha evolucionado mucho con el tiempo desde sus orígenes, el objetivo no ha cambiado, porque la red permite compartir una ingente cantidad de datos entre usuarios sin apenas restricciones y el único requisito necesario sería contar con conexión a Internet.
+  
+  El desarrollo web cobra una relevancia especial en los tiempos actuales, donde prácticamente la inmensa totalidad de la población a nivel mundial está conectada a Internet y la utiliza a diario como herramienta de trabajo o consulta.</p>
+      
+  <span class="w3-large">Presentación creativa de Kleider Vidales:</span><br>
+
+  <p>Desde los 14 años he sentido un fuerte vínculo con la poesía y la literatura, en aquel momento me animé a redactar algunos párrafos como método de expresión, progresivamente fuí haciendo poemas y actualmente estoy escribiendo mi propio libro, es un camino arduo pero estoy seguro de que lo llegaré a terminar. Actualmente estudio en el Instituto Técnico de Adiestramiento para el Trabajo (I.T.A.T.), en el cual estoy cursando 6to de Informática, el último año. En el futuro espero terminar mi libro con el objetivo de que sea un Best Seller, y exponer todos mis poemas en un poemario. Ciertamente quiero ser alguien influyente, quiero dejar un legado y no ser alguien más en este extenso mundo.</p>
+  <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+  
+{% endblock %}
+
